@@ -1,1 +1,20 @@
 {% extends "base.html" %}
+
+{% block content %}
+    <h1 class="home-h1">{{ SITENAME }}</h1>
+    <ol>
+        {% for article in articles_page.object_list %}
+        <li>
+
+            <article class="home-item">
+                <a class="home-item-link" href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">
+                    <time itemprop="datePublished" datetime="{{ article.date.isoformat() }}" class="home-item-date">{{ article.locale_date }}</time>
+                    <h2 class="home-item-title">{{ article.title }}</h2>
+                    <p>{{ article.summary }}</p>
+                </a>
+            </article>
+            <hr>
+        </li>
+        {% endfor %}
+    </ol>
+{% endblock %}

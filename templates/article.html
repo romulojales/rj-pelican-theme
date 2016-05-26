@@ -1,14 +1,24 @@
 {% extends "base.html" %}
 
-{% block title %}{{article.title}}{% endblock %}
+{% block title %}{{ article.title }}{% endblock %}
 
 {% block content %}
-<header class="article-header">
-    <h1>{{ article.title }}</h1>
-    <time itemprop="datePublished" datetime="{{article.date.isoformat()}}" class="date">{{article.locale_date}}</time>
-</header>
-<article>
-    {{ article.content }}
-</article>
+    <nav>
+        <a href="{{ SITEURL }}/">home</a>
+    </nav>
+
+    <header class="article-header">
+        <h1>{{ article.title }}</h1>
+        <time itemprop="datePublished" datetime="{{ article.date.isoformat() }}" class="date">{{ article.locale_date }}</time>
+    </header>
+            <hr>
+    <section class="article-body">
+        <article>
+            {{ article.content }}
+        </article>
+    </section>
+    <nav>
+        <a href="{{ SITEURL }}/">home</a>
+    </nav>
 
 {% endblock %}
