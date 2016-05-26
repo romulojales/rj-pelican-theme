@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
 
+     <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/{{ CSS_FILE }}" />
+
     <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
+
+    {% block head %}{% endblock %}
 </head>
 <body>
 {%block content %}
