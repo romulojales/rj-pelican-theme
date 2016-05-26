@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}{{article.title}}{% endblock %}
+
+{% block content %}
+<header>
+    <h1>{{ article.title }}</h1>
+    <time itemprop="datePublished" datetime="{{article.date.isoformat()}}" class="date">{{article.locale_date}}</time>
+</header>
+<article>
+    {{ article.content }}
+</article>
+
+{% endblock %}
