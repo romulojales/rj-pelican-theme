@@ -3,17 +3,24 @@
 <head>
     <meta charset="UTF-8">
 
-     <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/{{ CSS_FILE }}" />
+    <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/{{ CSS_FILE }}"/>
 
     <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
 
     {% block head %}{% endblock %}
 </head>
 <body>
-{%block content %}
+{% block content %}
 {% endblock %}
-<aside>
-    <a href="https://github.com/romulojales/rj-pelican-theme/"></a>
-</aside>
+<footer>
+    <aside>
+        <a href="https://github.com/romulojales/rj-pelican-theme/">RJ Pelican Theme</a>
+    </aside>
+</footer>
+
+{% if GOOGLE_ANALYTICS %}
+    {% include "google_analytics.html" %}
+{% endif %}
+
 </body>
 </html>
