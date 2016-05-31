@@ -1,1 +1,25 @@
 {% extends "base.html" %}
+
+
+{% block title %}{{ page.title }}{% endblock %}
+
+{% block content %}
+    <nav>
+        <a href="{{ SITEURL }}/">home</a>
+    </nav>
+
+    <header class="article-header">
+        <h1>{{ page.title }}</h1>
+        <time itemprop="datePublished" datetime="{{ page.date.isoformat() }}" class="date">{{ page.locale_date }}</time>
+    </header>
+            <hr>
+    <section class="article-body">
+        <article>
+            {{ page.content }}
+        </article>
+    </section>
+    <nav>
+        <a href="{{ SITEURL }}/">home</a>
+    </nav>
+
+{% endblock %}
