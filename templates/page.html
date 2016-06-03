@@ -10,7 +10,9 @@
 
     <header class="article-header">
         <h1>{{ page.title }}</h1>
+        {% if page.date %}
         <time itemprop="datePublished" datetime="{{ page.date.isoformat() }}" class="date">{{ page.locale_date }}</time>
+        {% endif %}
     </header>
             <hr>
     <section class="article-body">
