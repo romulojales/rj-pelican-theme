@@ -16,19 +16,23 @@
     {% block head %}{% endblock %}
 </head>
 <body>
-<section>
+<section class="main">
 {% block content %}
 {% endblock %}
 </section>
+
+{% block disqus %}
+{% if DISQUS_SITENAME %}
+{% include "disqus.html" %}
+{% endif %}
+{% endblock %}
 <footer>
     <aside>
         {% block footer_nav %}{% endblock %}
         <a href="https://github.com/romulojales/rj-pelican-theme/">RJ Pelican Theme</a>
     </aside>
 </footer>
-
-{% if GOOGLE_ANALYTICS %}
-    {% include "google_analytics.html" %}
+{% if GOOGLE_ANALYTICS %}{% include "google_analytics.html" %}
 {% endif %}
 <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/pygments.css"/>
 </body>

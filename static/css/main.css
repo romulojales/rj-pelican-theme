@@ -93,6 +93,9 @@ ol{
     list-style: none;
 }
 
+.main{
+    margin-bottom: 4rem;''
+}
 .highlight {
     color: white;
     letter-spacing: .03rem;
@@ -104,8 +107,6 @@ ol{
 .home-h1{
     text-align: center;
 }
-
-
 
 .home-item-link{
     color: #555
