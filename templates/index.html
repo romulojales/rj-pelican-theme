@@ -11,7 +11,7 @@
                 <a class="home-item-link" href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">
                     <time itemprop="datePublished" datetime="{{ article.date.isoformat() }}" class="home-item-date">{{ article.locale_date }}</time>
                     <h1 class="home-item-title">{{ article.title }}</h1>
-                    <p>{{ article.summary }}</p>
+                    <p>{{ article.description }}</p>
                 </a>
             </article>
             <hr>
