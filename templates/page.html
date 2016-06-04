@@ -1,6 +1,10 @@
 {% extends "base.html" %}
 
-
+{% block head %}
+{% if page.description %}
+<meta name="description" content="{{ page.description }}">
+{% endif %}
+{% endblock %}
 {% block title %}{{ page.title }}{% endblock %}
 
 {% block content %}
