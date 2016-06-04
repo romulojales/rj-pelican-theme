@@ -30,11 +30,16 @@ footer{
 h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
     text-align: left;
-    margin: 1rem 0 2rem;
+
+}
+
+h2, h3, h4, h5, h6{
+    margin: 3rem 0 3rem;
 }
 
 h1 {
     font-size: 2.2rem;
+    margin: 2rem 0 2rem;
 }
 
 h2 {
@@ -67,10 +72,11 @@ li{
 }
 
 p, li {
+    color: #5f5f5f;
     font-size: 1.2rem;
     line-height: 1.5;
     letter-spacing: .01rem;
-    margin-bottom: 1.25rem;
+    margin-bottom: 1rem;
 }
 
 table {
