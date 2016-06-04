@@ -9,10 +9,13 @@
     {% block head %}{% endblock %}
 </head>
 <body>
+<section>
 {% block content %}
 {% endblock %}
+</section>
 <footer>
     <aside>
+        {% block footer_nav %}{% endblock %}
         <a href="https://github.com/romulojales/rj-pelican-theme/">RJ Pelican Theme</a>
     </aside>
 </footer>
