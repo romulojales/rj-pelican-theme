@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="{{ DEFAULT_LANG }}">
+<html lang="{{DEFAULT_LANG}} ">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edg " />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
 
     {% if FEED_ALL_ATOM %}
@@ -13,8 +13,8 @@
     <link rel="author" href="{{ GOOGLE_AUTHOR }}">
     {% endif %}
     <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/{{ CSS_FILE }}"/>
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ SITEURL }}/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="{{ SITEURL }}/favicon.ico" type="image/x-icon">
     {% block head %}{% endblock %}
 </head>
 <body>
@@ -34,8 +34,7 @@
         <a href="https://github.com/romulojales/rj-pelican-theme/">RJ Pelican Theme</a>
     </aside>
 </footer>
-{% if GOOGLE_ANALYTICS %}{% include "google_analytics.html" %}
-{% endif %}
+{% if GOOGLE_ANALYTICS %}{% include "google_analytics.html" %}{% endif %}
 <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/pygments.css"/>
 </body>
 </html>
