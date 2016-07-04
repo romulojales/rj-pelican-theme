@@ -2,7 +2,8 @@
 * {
     box-sizing: border-box;
 }
-html{
+
+html {
     font-size: 1em;
     font-family: sans-serif;
 }
@@ -13,7 +14,7 @@ a {
 }
 
 body {
-    left:0;
+    left: 0;
     right: 0;
     line-height: 1;
     margin: 1rem auto;
@@ -23,7 +24,7 @@ body {
     width: auto;
 }
 
-footer{
+footer {
     text-align: center;
 }
 
@@ -33,7 +34,7 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
-h2, h3, h4, h5, h6{
+h2, h3, h4, h5, h6 {
     margin: 3rem 0 3rem;
 }
 
@@ -66,8 +67,7 @@ header {
     margin-bottom: 2rem;
 }
 
-
-li{
+li {
     line-height: 1.2;
 }
 
@@ -77,6 +77,13 @@ p, li {
     line-height: 1.5;
     letter-spacing: .01rem;
     margin-bottom: 1rem;
+}
+
+p img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    height: auto;
 }
 
 table {
@@ -89,13 +96,15 @@ time {
     font-weight: bold;
 }
 
-ol{
+ol {
     list-style: none;
 }
 
-.main{
-    margin-bottom: 4rem;''
+.main {
+    margin-bottom: 4rem;
+''
 }
+
 .highlight {
     color: white;
     letter-spacing: .03rem;
@@ -104,25 +113,19 @@ ol{
     overflow: scroll;
 }
 
-.home-h1{
+.home-h1 {
     text-align: center;
 }
 
-.home-item-link{
+.home-item-link {
     color: #555
 }
 
-.home-item-date{
+.home-item-date {
     color: #999
 }
 
-.home-item-title{
+.home-item-title {
     color: #111;
     margin-bottom: 1rem
 }
-
-/*@media only screen and (max-device-width: 414px) {*/
-    /*html {*/
-        /*font-size:  2em;;*/
-    /*}*/
-/*}*/
