@@ -76,7 +76,7 @@ p, li {
     font-size: 1.2rem;
     line-height: 1.5;
     letter-spacing: .01rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 p img {
@@ -102,7 +102,6 @@ ol {
 
 .main {
     margin-bottom: 4rem;
-''
 }
 
 .highlight {
@@ -115,6 +114,10 @@ ol {
 
 .home-h1 {
     text-align: center;
+}
+
+.home-item{
+    padding: 0 20px;
 }
 
 .home-item-link {
