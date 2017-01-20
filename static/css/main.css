@@ -24,6 +24,11 @@ body {
     width: auto;
 }
 
+iframe{
+    display: block;
+    margin:0 auto;
+}
+
 footer {
     text-align: center;
 }
@@ -131,4 +136,8 @@ ol {
 .home-item-title {
     color: #111;
     margin-bottom: 1rem
+}
+
+.article-body{
+    margin: 20px auto;
 }
