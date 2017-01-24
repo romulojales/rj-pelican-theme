@@ -19,8 +19,21 @@
 </head>
 <body>
 <section class="main">
-{% block content %}
-{% endblock %}
+    {% block nav_top %}
+    <nav>
+        <a href="{{ SITEURL }}/">{{ SITENAME }}</a>
+    </nav>
+    {% endblock %}
+    {% block content %}
+    {% endblock %}
+    {% block nav_bottom %}
+    <footer>
+        <nav>
+            <a href="{{ SITEURL }}/">home</a>
+        </nav>
+    </footer>
+    {% endblock %}
+
 </section>
 
 {% block disqus %}
